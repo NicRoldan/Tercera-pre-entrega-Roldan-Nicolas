@@ -1,0 +1,481 @@
+/* lista de fonts---
+font-family: 'Lato', sans-serif;
+font-family: 'Montserrat Alternates', sans-serif;
+font-family: 'Roboto', sans-serif; 
+---*/
+/* paleta de colores
+F6F578 amarillo pastel
+F6D743 amarillo mas intenso
+649D66 verde grisáceo
+06623B verde oscuro
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+.chegu-word {
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-weight: 700;
+
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-image: linear-gradient(#F6F578, #F6D743, #649D66, #06623B);
+}
+
+nav {
+    height: 75px;
+    width: 100%;
+    background-color: #f6ee6c;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    width: auto;
+    margin: 0;
+    gap: 0.4rem;
+}
+
+.logo {
+    height: 50px;
+    margin-left: 20px;
+}
+
+.logo-txt {
+    font-size: 30px;
+    line-height: 75px;
+    padding-left: 10px;
+    font-weight: bold;
+    color: rgb(2, 1, 1);
+    font-family: 'Montserrat Alternates', sans-serif;
+}
+
+.nav-list {
+    position: fixed;
+    width: 100%;
+    height: 0vh;
+    top: 75px;
+    background: #06623B;
+    float: right;
+    text-align: center;
+    transition: all .5s;
+}
+
+.nav-list li {
+    opacity: 0;
+    line-height: 30px;
+    margin: 20px 0;
+    transition: all .5s;
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+
+}
+
+.nav-list li a {
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+.activo,
+.nav-list li a:hover {
+    color: rgb(50, 236, 4);
+    transition: 0.5s;
+
+}
+
+.hamburguesa-btn {
+    display: block;
+    font-size: 30px;
+    color: black;
+    float: right;
+    line-height: 75px;
+    margin-right: 40px;
+    cursor: pointer;
+}
+
+#check {
+    display: none;
+}
+
+#check:checked~.nav-list {
+    height: 100vh;
+}
+
+#check:checked~.nav-list li {
+    opacity: 1;
+}
+
+/* Barra de navegación responsive */
+/* para tablet comparte atributos igual a desktop */
+
+
+
+
+/* barra de navegacion para desktop */
+@media only screen and (min-width: 1200px) {
+    .logo-container {
+        margin-left: 25px;
+    }
+
+    nav {
+        height: 100px;
+    }
+
+    .hamburguesa-btn {
+        display: none;
+    }
+
+    .nav-list {
+        position: relative;
+        height: 100px;
+        top: 0;
+        background: none;
+        float: right;
+        text-align: right;
+        margin-right: 25px;
+        transition: none;
+    }
+
+    .nav-list li {
+        display: inline-block;
+        opacity: 1;
+        line-height: 100px;
+        margin: 0 20px;
+        transition: none;
+    }
+}
+
+/* main */
+
+
+/* seccion bienvenida */
+
+h2,
+h3 {
+    margin: 0;
+    color: #333;
+    font-family: 'Roboto', sans-serif; 
+
+
+}
+
+h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+h3 {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+
+p {
+    margin: 0;
+    color: #666;
+    line-height: 1.6;
+}
+
+
+a {
+    color: #007bff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #0056b3;
+}
+
+/* Estilos para las secciones */
+section {
+    margin-bottom: 30px;
+    overflow: hidden;
+}
+
+.div-parrafo {
+    text-align: justify;
+}
+
+.descripcion {
+    font-family: 'Lato', sans-serif;
+
+}
+
+
+.art-group {
+    background-color: #ffffff41;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    padding: 20px;
+}
+
+.art-group img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.art-group div {
+    margin-left: 0;
+}
+
+@media only screen and (min-width:768px) and (max-width:1199px) {
+
+    .secciones-index {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-bottom: 20px;
+    }
+
+
+    .art-group {
+        background-color: #ffffff41;
+        border-radius: 8px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        width: calc(50% - 20px);
+        margin-bottom: 20px;
+        padding: 20px;
+
+    }
+
+    .art-group img {
+        display: block;
+        width: 100%;
+        height: auto;
+        border-radius: 8px;
+        margin-bottom: 20px;
+    }
+
+    .titulo-bienvenida,
+    .titulos-main {
+        font-size: 1.5em;
+        margin-top: 0;
+    }
+
+    .descripcion {
+        font-size: 1rem;
+    }
+
+}
+
+@media only screen and (min-width: 1200px) {
+    .secciones-index {
+        margin: 20px;
+        height: auto;
+        border-radius: 25px 25px;
+    }
+
+    .div-parrafo {
+        max-width: 45%;
+
+    }
+
+    .art-group {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .art-group img {
+        width: 45%;
+        display: block;
+        max-height: 300px;
+        padding: 1rem;
+        border-radius: 40px;
+    }
+
+    .titulo-bienvenida {
+        font-size: 24px;
+        color: #333;
+    }
+
+    .articulo1 .div-parrafo {
+        text-align: end;
+    }
+
+    .articulo3 .div-parrafo {
+        text-align: end;
+    }
+
+    .articulo1 img, .articulo3 img {
+        
+        order: 1;
+        
+
+    }
+}
+/* final de atributos para index.html */
+
+/* atributos para contactanos.html */
+
+.contenedor-contactanos {
+    width: 90%;
+    max-width: 400px;
+    margin: 100px auto;
+    background-color: #ffffff54;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+}
+
+.h2-contactanos {
+    text-align: center;
+}
+
+form {
+    margin-top: 20px;
+}
+
+.campo {
+    margin-bottom: 15px;
+}
+
+.label-contactanos {
+    display: block;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="tel"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.btn-contactanos[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    border: none;
+    border-radius: 4px;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.btn-contactanos[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+@media only screen and (min-width:768px) and (max-width:1199px) {
+
+    .contenedor-contactanos {
+        max-width: 600px;
+    }
+}
+
+@media only screen and (min-width:1200px) {
+    .contenedor-contactanos {
+        max-width: 900px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* footer */
+
+
+footer {
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #06623B;
+    padding: 10px;
+    text-align: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo img {
+    width: 80px;
+}
+
+.logo p {
+    color: #fff;
+    margin-left: 10px;
+}
+
+.redes-sociales a {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.redes-sociales img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.info p {
+    color: #fff;
+    margin: 5px 0;
+}
+
+/* Media queries */
+
+@media only screen and (max-width: 768px) {
+    .logo img {
+        width: 60px;
+    }
+
+    .redes-sociales a {
+        margin: 0 5px;
+    }
+
+    .redes-sociales img {
+        width: 30px;
+        height: 30px;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .redes-sociales img {
+        width: 50px;
+        height: 50px;
+        
+    }
+}
+
+/* -------------------footer-------------- */

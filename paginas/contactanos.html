@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/estilos.css">
+    <title>CONTACTANOS</title>
+    <link rel="icon" href="../imagenes/logo-pgn.png">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:wght@400;900&family=Montserrat+Alternates:ital,wght@0,600;0,900;1,400&family=Roboto+Serif:opsz,wght@8..144,400;8..144,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./CSS/estilos.css">
+    <link rel="icon" href="./imagenes/logo-pgn.png">
+    <script src="https://kit.fontawesome.com/65f3c8fd56.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+<!-- barra de navegacion -->
+    <header>
+        <nav>
+            <div class="logo-container">
+                <img class="logo" src="../imagenes/logo-chiquito.png" alt="logo chegusan">
+                <label class="logo-txt">Chegusan</label>
+            </div>
+            <input type="checkbox" id="check">
+            <label for="check" class="hamburguesa-btn">
+                <i class="fas fa-bars"></i>
+            </label>
+            <ul class="nav-list">
+                <li><a class="activo" href="../index.html">Home</a></li>
+                <li><a href="./historia.html">Historia</a></li>
+                <li><a href="./sangucherias.html">Sangucherias</a></li>
+                <li><a href="./ranking.html">Ranking</a></li>
+                <li><a href="./contactanos.html">Contactanos</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="contenedor-contactanos">
+            <h2 class="h2-contactanos">Formulario de Contacto</h2>
+            <form action="#">
+                <div class="campo">
+                    <label class="label-contactanos" for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" placeholder="Ej: Juan Perez" required>
+                </div>
+                <div class="campo">
+                    <label class="label-contactanos" for="telefono">Teléfono:</label>
+                    <input type="tel" id="telefono" name="telefono" pattern="[0-9]{10}" placeholder="Ej: 1123568945" required>
+                </div>
+                <div class="campo">
+                    <label class="label-contactanos" for="email">Correo electrónico:</label>
+                    <input type="email" id="email" name="email" placeholder="Ej: nombre@correo.com" required>
+                </div>
+                <div class="campo">
+                    <label class="label-contactanos" for="consulta">Consulta:</label>
+                    <textarea id="consulta" name="consulta" rows="4" placeholder="Escriba su consulta..." required></textarea>
+                </div>
+                <button class="btn-contactanos" type="submit">Enviar</button>
+            </form>
+        </div>
+    
+    </main>
+<!-- footer -->
+<footer>
+    <div class="logo">
+        <img src="../imagenes/logo-chiquito.png" alt="Logo de CHEGUSAN">
+        <p>Chegusan</p>
+    </div>
+    <div class="redes-sociales">
+        <a href="https://www.instagram.com/tu_usuario_instagram" target="_blank"><i
+                class="fa-brands fa-instagram"></i></a>
+        <a href="https://www.facebook.com/tu_usuario_facebook" target="_blank"><i><i
+                    class="fa-brands fa-facebook"></i></i></a>
+        <a href="https://twitter.com/tu_usuario_twitter" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+    </div>
+    <div class="info">
+        <p>&copy; 2024 Chegusan | Todos los derechos reservados</p>
+    </div>
+</footer>
+
+</body>
+
+</html>
