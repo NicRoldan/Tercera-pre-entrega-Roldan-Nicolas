@@ -1,0 +1,56 @@
+.contenedor-contactanos {
+    width: 90%;
+    max-width: 400px;
+    margin: 100px auto;
+    background-color: rgba(255, 255, 255, 0.3294117647);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+  }
+  .contenedor-contactanos .h2-contactanos {
+    text-align: center;
+  }
+  .contenedor-contactanos form {
+    margin-top: 20px;
+  }
+  .contenedor-contactanos form .campo {
+    margin-bottom: 15px;
+  }
+  .contenedor-contactanos form .campo .label-contactanos {
+    display: block;
+    font-weight: bold;
+  }
+  .contenedor-contactanos form .campo input[type=text],
+  .contenedor-contactanos form .campo input[type=tel],
+  .contenedor-contactanos form .campo input[type=email],
+  .contenedor-contactanos form .campo textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  .contenedor-contactanos form .btn-contactanos[type=submit] {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    border: none;
+    border-radius: 4px;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  .contenedor-contactanos form .btn-contactanos[type=submit]:hover {
+    background-color: #0056b3;
+  }
+  
+  @media only screen and (min-width: 768px) and (max-width: 1199px) {
+    .contenedor-contactanos {
+      max-width: 600px;
+    }
+  }
+  @media only screen and (min-width: 1200px) {
+    .contenedor-contactanos {
+      max-width: 900px;
+    }
+  }

@@ -1,0 +1,68 @@
+/* tabla de ranking */
+.section-rank h2 {
+    font-family: sans-serif;
+    width: 100%;
+    margin: 35px auto;
+    text-align: center;
+    color: rgb(0, 0, 0);
+    font-size: 900;
+    font-family: 'Roboto', sans-serif;
+}
+
+table {
+    width: 100%;
+    margin: 0 auto;
+    padding-bottom: 1rem;
+    color: rgb(0, 0, 0);
+    font-size: 700;
+    text-align: start;
+    font-family: 'Lato', sans-serif;
+}
+
+table tr {
+    cursor: pointer;
+}
+
+table td {
+    padding: 1rem;
+}
+
+.destacado {
+    font-family: Arial;
+    font-weight: bold;
+    background-color: #0D6859;
+}
+
+body {
+    background-color: #0F3E76;
+}
+
+/* Impares */
+table tr:nth-child(odd) {
+    background-color: #A0C55E;
+}
+
+table tr:nth-child(odd):hover {
+    color: black;
+    background-color: #00aa00;
+}
+
+/* Pares */
+table tr:nth-child(even) {
+    background-color: #7AB318;
+}
+
+/* Estilos para tablet */
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+    table {
+        width: 70%;
+        margin: 0 auto;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    table {
+        width: 70%;
+        margin: 0 auto;
+    }
+}

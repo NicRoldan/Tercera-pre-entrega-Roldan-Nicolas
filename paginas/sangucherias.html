@@ -4,21 +4,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../CSS/estilos.css">
     <link rel="icon" href="../imagenes/logo-pgn.png">
     <title>SANGUCHERIAS</title>
     <link
         href="https://fonts.googleapis.com/css2?family=Lato:wght@400;900&family=Montserrat+Alternates:ital,wght@0,600;0,900;1,400&family=Roboto+Serif:opsz,wght@8..144,400;8..144,900&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="../CSS/estilos.css">
+
     <link rel="icon" href="./imagenes/logo-pgn.png">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <script src="https://kit.fontawesome.com/65f3c8fd56.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../CSS/estilos.css">
 
 </head>
 
 <body>
     <header>
-        <nav>
+        <nav class="container-xl">
             <div class="logo-container">
                 <img class="logo" src="../imagenes/logo-chiquito.png" alt="logo chegusan">
                 <label class="logo-txt">Chegusan</label>
@@ -29,91 +32,1349 @@
             </label>
             <ul class="nav-list">
                 <li><a class="activo" href="../index.html">Home</a></li>
-                <li><a href="./historia.html">Historia</a></li>
-                <li><a href="./sangucherias.html">Sangucherias</a></li>
-                <li><a href="./ranking.html">Ranking</a></li>
-                <li><a href="./contactanos.html">Contactanos</a></li>
+                <li><a href="../paginas/historia.html">Historia</a></li>
+                <li><a href="../paginas/sangucherias.html">Sangucherias</a></li>
+                <li><a href="../paginas/ranking.html">Ranking</a></li>
+                <li><a href="../paginas/contactanos.html">Contactanos</a></li>
             </ul>
         </nav>
     </header>
 
-    <main>
-        <section>
-            <h2>Las Sangucherías de Milanesa Tucumana: Patrimonio Gastronómico y Culminación del Arte Culinario</h2>
-            <p>En las encantadoras calles bulliciosas de Tucumán, las sangucherías de milanesa se erigen como templos
-                vivos, fusionando historia, pasión y sabor para dar vida al milagro culinario conocido como el Sánguche
-                de Milanesa. Estos establecimientos no son meros lugares de encuentro, sino auténticos patrimonios
-                culturales que celebran la magia de esta deliciosa creación tucumana.
+    <main class="container-xl">
+        <div>
+            <h2 class="titulo-sangucherias">Votá las mejores sangucherías</h2>
+        </div>
+        <div class="container-fluid">
+            <div class="row d-flex justify-content-around">
 
-                Guiadas por apasionados artífices culinarios, estas sangucherías son más que locales de comida rápida;
-                son guardianes de recetas ancestrales, transmitidas con amor y dedicación. Cada sanguchero se convierte
-                en el portador de la esencia tucumana, transformando la elaboración del Sánguche de Milanesa en un arte,
-                donde la selección cuidadosa de la carne y la técnica precisa de empanado son rituales sagrados.
-                Cada milanesa, como una obra maestra culinaria, encuentra su hogar entre panes sangucheros tostados con
-                maestría. La atmósfera en estas sangucherías vibra con el legado de generaciones, convirtiendo cada
-                bocado en un viaje a través de la historia local. En homenaje a figuras emblemáticas, incluso se dedica
-                un día al Sánguche de Milanesa, recordando su impacto en la región.
+                <!-- tarjeta  -->
+                <div class="card" style="width: 18rem;">
+                    <img src="../imagenes/logos-sangucherias/CHICHO-BAR-400x300.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h2 class="card-title">Chicho</h5>
+                            <a
+                                href="https://www.google.com/maps/place/26%C2%B049'04.9%22S+65%C2%B014'12.1%22W/@-26.818036,-65.236682,17z/data=!3m1!4b1!4m4!3m3!8m2!3d-26.818036!4d-65.236682?entry=ttu">Necochea 453, Tucumán</a>
+                            <div>
+                                <div class="rating-css d-flex align-items-center">
+                                    <div>
+                                        <h3 class="h3-card">Milanga</h3>
+                                    </div>
+                                    <div class="star-icon">
+                                        <input type="radio" name="rating1" id="rating1">
+                                        <label for="rating1" class="bi bi-star-fill"></label>
 
-                Estos santuarios gastronómicos no solo sirven sánguches; son los embajadores de Tucumán en cada
-                platillo. Los kioscos de lata, modestos pero llenos de tradición, comparten esquinas y plazas con
-                majestuosas sangucherías de infraestructuras inmensas. Ambas, sin importar su tamaño, se entrelazan en
-                la diversidad del arte de freír milagros.
+                                        <input type="radio" name="rating1" id="rating2">
+                                        <label for="rating2" class="bi bi-star-fill"></label>
 
-                Desde las zonas céntricas, donde el bullicio marca el ritmo, hasta los barrios periféricos, donde estas
-                instituciones son pilares comunitarios, las sangucherías se extienden por toda la geografía tucumana.
-                Algunas son reconocidas y reverenciadas, mientras que otras permanecen ocultas, pero todas comparten la
-                promesa de mantener el aceite caliente, listo para transformar cada milanesa en un festín de sabores.
-                Así, en Tucumán, las sangucherías de milanesa se erigen como patrimonios culturales y gastronómicos,
-                donde cada tipo de establecimiento contribuye a la riqueza de la escena culinaria local. Más que simples
-                lugares para comer, estas instituciones son testamentos vivos de la pasión tucumana por el arte de freír
-                milagros, convirtiendo cada visita en una experiencia culinaria única y sagrada.</p>
-        </section>
+                                        <input type="radio" name="rating1" id="rating3">
+                                        <label for="rating3" class="bi bi-star-fill"></label>
 
-        <section>
-            <h2>Chacho: El Alma Milanesera de Tucumán que Conquistó el Corazón de Yerba Buena</h2>
-                <img src="../imagenes/frente-chacho.jpg" alt="frente del antiguo local de chacho">
-                    <p>En el tejido gastronómico de Tucumán, Norberto Leguizamón, conocido como "Chacho", emerge como el
-                    visionario que allanó el camino para la deliciosa tradición del sánguche de milanesa. Desde sus
-                    modestos inicios en un "kiosco" de lata hasta la expansión a un local de dimensiones generosas,
-                    Chacho ha sido un pionero en el arte milanesero que ha dejado una huella imborrable en la provincia.
+                                        <input type="radio" name="rating1" id="rating4">
+                                        <label for="rating4" class="bi bi-star-fill"></label>
 
-                    El "Triángulo sanguchero del Cristo", conformado por Chacho junto a El Kun y El 10, es un punto de
-                    referencia en la escena gastronómica de Tucumán. La sanguchería ha cultivado características únicas,
-                    como la mezcla perfecta de cebolla y pimiento, que se convierte en un auténtico canto al buen gusto.
-                    Aquí, la cebolla es simplemente "la mejor de Tucumán", como señala Julio, un fiel seguidor de los
-                    sabores de Chacho.
+                                        <input type="radio" name="rating1" id="rating5">
+                                        <label for="rating5" class="bi bi-star-fill"></label>
 
-                    Pero más allá de los ingredientes, los verdaderos protagonistas son los maestros sangucheros. Con su
-                    peculiar lenguaje, ofrecen opciones como "pesi, manzana o sevená", creando una experiencia única y
-                    auténtica. La rejilla en el hombro, que hace las veces de repasador, es un sello distintivo que solo
-                    los verdaderos amantes del sánguche comprenden.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="rating-css d-flex align-items-center">
+                                <div>
+                                    <h3 class="h3-card">Pan</h3>
+                                </div>
+                                <div class="star-icon">
+                                    <input type="radio" name="rating6" id="rating6">
+                                    <label for="rating6" class="bi bi-star-fill"></label>
 
-                    Emiliano, cliente desde hace más de 15 años, destaca la atención personalizada: "Ni hablar de la
-                    rejilla en el hombro. Encima acá conocen el gusto y las preferencias de los clientes habituales. Por
-                    mínimas que sean, se acuerdan del gusto de cada uno". En Chacho, cada sánguche es más que una simple
-                    preparación; es una experiencia que se ajusta a los gustos individuales de los comensales.
+                                    <input type="radio" name="rating6" id="rating7">
+                                    <label for="rating7" class="bi bi-star-fill"></label>
 
-                    La oferta gastronómica sigue la tradición de antaño, ofreciendo sánguches clásicos como milanesa,
-                    lomito, hamburguesa y ternera. Aunque algunos consideran un "sacrilegio" agregar jamón, queso y
-                    huevo, la sanguchería ha sabido adaptarse para satisfacer todos los paladares. En palabras de un
-                    crítico, "le guste a quien le guste, Chacho es un símbolo de Tucumán".
+                                    <input type="radio" name="rating6" id="rating8">
+                                    <label for="rating8" class="bi bi-star-fill"></label>
 
-                    A lo largo de décadas, Chacho ha superado desafíos como subas exorbitantes de la carne,
-                    desabastecimientos y escasez de verduras, sin perder la esencia de su sánguche legendario. "Le guste
-                    a quien le guste, Chacho es un símbolo de Tucumán. He escuchado gente que se burla del aceite porque
-                    dicen que es viejo, que deber ser el mismo que hace 20 años, y yo digo que por eso el sánguche sigue
-                    siendo igual de rico que hace 20 años", concluye un experto en la materia.
+                                    <input type="radio" name="rating6" id="rating9">
+                                    <label for="rating9" class="bi bi-star-fill"></label>
 
-                    En Chegusan, celebramos la pasión, la tradición y la magia de Chacho, un lugar donde el sánguche de
-                    milanesa se convierte en un verdadero arte que conquista el paladar y el corazón de cada tucumano.
-                    ¿Listos para explorar el legado de Chacho? ¡Hasta la próxima parada gastronómica en Chegusan!</p>
-                <img src="../imagenes/chacho-adentro.jpg" alt="sangucheria chacho desde chacho-adentro">
-            
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3560.676180319546!2d-65.26835152528109!3d-26.81843758927003!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94225cdc4df33931%3A0x49d4f9d1436d71d7!2sCHACHO%20el%20Rey%20de%20la%20Milanesa!5e0!3m2!1ses-419!2sar!4v1705790911332!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">ubicacion de sangucheria chacho</iframe>
-            
-        </section>
-        
+                                    <input type="radio" name="rating6" id="rating10">
+                                    <label for="rating10" class="bi bi-star-fill"></label>
+
+                                </div>
+                            </div>
+
+                            <div class="rating-css d-flex align-items-center">
+                                <div>
+                                    <h3 class="h3-card">Picante</h3>
+                                </div>
+                                <div class="star-icon">
+                                    <input type="radio" name="rating11" id="rating11">
+                                    <label for="rating11" class="bi bi-star-fill"></label>
+
+                                    <input type="radio" name="rating11" id="rating12">
+                                    <label for="rating12" class="bi bi-star-fill"></label>
+
+                                    <input type="radio" name="rating11" id="rating13">
+                                    <label for="rating13" class="bi bi-star-fill"></label>
+
+                                    <input type="radio" name="rating11" id="rating14">
+                                    <label for="rating14" class="bi bi-star-fill"></label>
+
+                                    <input type="radio" name="rating11" id="rating15">
+                                    <label for="rating15" class="bi bi-star-fill"></label>
+
+                                </div>
+                            </div>
+
+                            <div class="rating-css d-flex align-items-center">
+                                <div>
+                                    <h3 class="h3-card">Servicio</h3>
+                                </div>
+                                <div class="star-icon">
+                                    <input type="radio" name="rating16" id="rating16">
+                                    <label for="rating16" class="bi bi-star-fill"></label>
+
+                                    <input type="radio" name="rating16" id="rating17">
+                                    <label for="rating17" class="bi bi-star-fill"></label>
+
+                                    <input type="radio" name="rating16" id="rating18">
+                                    <label for="rating18" class="bi bi-star-fill"></label>
+
+                                    <input type="radio" name="rating16" id="rating19">
+                                    <label for="rating19" class="bi bi-star-fill"></label>
+
+                                    <input type="radio" name="rating16" id="rating20">
+                                    <label for="rating20" class="bi bi-star-fill"></label>
+
+                                </div>
+                            </div>
+                    </div>
+                    <button type="button" class="btn btn-primary btn-card"
+                        style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">
+                        Votar
+                    </button>
+
+
+                </div>
+
+
+                <!-- tarjeta  -->
+                <div class="card" style="width: 18rem;">
+                    <img src="..//imagenes/logos-sangucherias/Los-electricos-400x300.jpg" class="card-img-top"
+                        alt="...">
+                    <div class="card-body">
+                        <h2 class="card-title">Los Eléctricos</h5>
+                            <a href="https://www.google.com/maps/place/Los+El%C3%A9ctricos/@-26.8155545,-65.216449,17z/data=!3m1!4b1!4m6!3m5!1s0x94225c388f8aa4af:0x8e1c7a782d1f7e11!8m2!3d-26.8155593!4d-65.2138741!16s%2Fg%2F11bc8x45p6?entry=ttu">Suipacha 950, Tucumán</a>
+                            <div>
+                                <div class="rating-css d-flex align-items-center">
+                                    <div>
+                                        <h3 class="h3-card">Milanga</h3>
+                                    </div>
+                                    <div class="star-icon">
+                                        <input type="radio" name="rating21" id="rating21">
+                                        <label for="rating21" class="bi bi-star-fill"></label>
+
+                                        <input type="radio" name="rating21" id="rating22">
+                                        <label for="rating22" class="bi bi-star-fill"></label>
+
+                                        <input type="radio" name="rating21" id="rating23">
+                                        <label for="rating23" class="bi bi-star-fill"></label>
+
+                                        <input type="radio" name="rating21" id="rating24">
+                                        <label for="rating24" class="bi bi-star-fill"></label>
+
+                                        <input type="radio" name="rating21" id="rating25">
+                                        <label for="rating25" class="bi bi-star-fill"></label>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="rating-css d-flex align-items-center">
+                                <div>
+                                    <h3 class="h3-card">Pan</h3>
+                                </div>
+                                <div class="star-icon">
+                                    <input type="radio" name="rating26" id="rating26">
+                                    <label for="rating26" class="bi bi-star-fill"></label>
+
+                                    <input type="radio" name="rating26" id="rating27">
+                                    <label for="rating27" class="bi bi-star-fill"></label>
+
+                                    <input type="radio" name="rating26" id="rating28">
+                                    <label for="rating28" class="bi bi-star-fill"></label>
+
+                                    <input type="radio" name="rating26" id="rating29">
+                                    <label for="rating29" class="bi bi-star-fill"></label>
+
+                                    <input type="radio" name="rating26" id="rating30">
+                                    <label for="rating30" class="bi bi-star-fill"></label>
+
+                                </div>
+                            </div>
+
+                            <div class="rating-css d-flex align-items-center">
+                                <div>
+                                    <h3 class="h3-card">Picante</h3>
+                                </div>
+                                <div class="star-icon">
+                                    <input type="radio" name="rating31" id="rating31">
+                                    <label for="rating31" class="bi bi-star-fill"></label>
+
+                                    <input type="radio" name="rating31" id="rating32">
+                                    <label for="rating32" class="bi bi-star-fill"></label>
+
+                                    <input type="radio" name="rating31" id="rating33">
+                                    <label for="rating33" class="bi bi-star-fill"></label>
+
+                                    <input type="radio" name="rating31" id="rating34">
+                                    <label for="rating34" class="bi bi-star-fill"></label>
+
+                                    <input type="radio" name="rating31" id="rating35">
+                                    <label for="rating35" class="bi bi-star-fill"></label>
+
+                                </div>
+                            </div>
+
+                            <div class="rating-css d-flex align-items-center">
+                                <div>
+                                    <h3 class="h3-card">Servicio</h3>
+                                </div>
+                                <div class="star-icon">
+                                    <input type="radio" name="rating36" id="rating36">
+                                    <label for="rating36" class="bi bi-star-fill"></label>
+
+                                    <input type="radio" name="rating36" id="rating37">
+                                    <label for="rating37" class="bi bi-star-fill"></label>
+
+                                    <input type="radio" name="rating36" id="rating38">
+                                    <label for="rating38" class="bi bi-star-fill"></label>
+
+                                    <input type="radio" name="rating36" id="rating39">
+                                    <label for="rating39" class="bi bi-star-fill"></label>
+
+                                    <input type="radio" name="rating36" id="rating40">
+                                    <label for="rating40" class="bi bi-star-fill"></label>
+
+                                </div>
+                            </div>
+                    </div>
+                    <button type="button" class="btn btn-primary btn-card"
+                        style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">
+                        Votar
+                    </button>
+
+
+                </div>
+
+
+                <!-- tarjeta  -->
+                <div class="card" style="width: 18rem;">
+                    <img src="../imagenes/logos-sangucherias/chacho-logo-400x300.jpeg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h2 class="card-title">Chacho</h5>
+                            <a href="https://www.google.com/maps/place/CHACHO+el+Rey+de+la+Milanesa/@-26.8184376,-65.2683515,17z/data=!3m1!4b1!4m6!3m5!1s0x94225cdc4df33931:0x49d4f9d1436d71d7!8m2!3d-26.8184424!4d-65.2657766!16s%2Fg%2F11cmbfr2y8?entry=ttu">Av. Aconquija 40, Yerba Buena</a>
+                            <div>
+                                <div class="rating-css d-flex align-items-center">
+                                    <div>
+                                        <h3 class="h3-card">Milanga</h3>
+                                    </div>
+                                    <div class="star-icon">
+                                        <input type="radio" name="rating41" id="rating41">
+                                        <label for="rating41" class="bi bi-star-fill"></label>
+
+                                        <input type="radio" name="rating41" id="rating42">
+                                        <label for="rating42" class="bi bi-star-fill"></label>
+
+                                        <input type="radio" name="rating41" id="rating43">
+                                        <label for="rating43" class="bi bi-star-fill"></label>
+
+                                        <input type="radio" name="rating41" id="rating44">
+                                        <label for="rating44" class="bi bi-star-fill"></label>
+
+                                        <input type="radio" name="rating41" id="rating45">
+                                        <label for="rating45" class="bi bi-star-fill"></label>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="rating-css d-flex align-items-center">
+                                <div>
+                                    <h3 class="h3-card">Pan</h3>
+                                </div>
+                                <div class="star-icon">
+                                    <input type="radio" name="rating46" id="rating46">
+                                    <label for="rating46" class="bi bi-star-fill"></label>
+
+                                    <input type="radio" name="rating46" id="rating47">
+                                    <label for="rating47" class="bi bi-star-fill"></label>
+
+                                    <input type="radio" name="rating46" id="rating48">
+                                    <label for="rating48" class="bi bi-star-fill"></label>
+
+                                    <input type="radio" name="rating46" id="rating49">
+                                    <label for="rating49" class="bi bi-star-fill"></label>
+
+                                    <input type="radio" name="rating46" id="rating50">
+                                    <label for="rating50" class="bi bi-star-fill"></label>
+
+                                </div>
+                            </div>
+
+                            <div class="rating-css d-flex align-items-center">
+                                <div>
+                                    <h3 class="h3-card">Picante</h3>
+                                </div>
+                                <div class="star-icon">
+                                    <input type="radio" name="rating51" id="rating51">
+                                    <label for="rating51" class="bi bi-star-fill"></label>
+
+                                    <input type="radio" name="rating51" id="rating52">
+                                    <label for="rating52" class="bi bi-star-fill"></label>
+
+                                    <input type="radio" name="rating51" id="rating53">
+                                    <label for="rating53" class="bi bi-star-fill"></label>
+
+                                    <input type="radio" name="rating51" id="rating54">
+                                    <label for="rating54" class="bi bi-star-fill"></label>
+
+                                    <input type="radio" name="rating51" id="rating55">
+                                    <label for="rating55" class="bi bi-star-fill"></label>
+
+                                </div>
+                            </div>
+
+                            <div class="rating-css d-flex align-items-center">
+                                <div>
+                                    <h3 class="h3-card">Servicio</h3>
+                                </div>
+                                <div class="star-icon">
+                                    <input type="radio" name="rating16" id="rating56">
+                                    <label for="rating56" class="bi bi-star-fill"></label>
+
+                                    <input type="radio" name="rating16" id="rating57">
+                                    <label for="rating57" class="bi bi-star-fill"></label>
+
+                                    <input type="radio" name="rating16" id="rating58">
+                                    <label for="rating58" class="bi bi-star-fill"></label>
+
+                                    <input type="radio" name="rating16" id="rating59">
+                                    <label for="rating59" class="bi bi-star-fill"></label>
+
+                                    <input type="radio" name="rating16" id="rating60">
+                                    <label for="rating60" class="bi bi-star-fill"></label>
+
+                                </div>
+                            </div>
+                    </div>
+                    <button type="button" class="btn btn-primary btn-card"
+                        style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">
+                        Votar
+                    </button>
+
+
+                </div>
+
+
+                <!-- tarjeta  -->
+                <div class="card" style="width: 18rem;">
+                    <img src="../imagenes/logos-sangucherias/Tutti-400x300.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h2 class="card-title">Tutti</h5>
+                            <a href="https://www.google.com/maps/place/Sandwicher%C3%ADa+y+cafeter%C3%ADa+Tutti+(barrio+norte)/@-26.8217277,-65.1993936,13z/data=!4m10!1m2!2m1!1stutti+sangucheria!3m6!1s0x94225c18f4f70641:0x2a516d4cc1d337f2!8m2!3d-26.8216212!4d-65.1992853!15sChF0dXR0aSBzYW5ndWNoZXJpYVoTIhF0dXR0aSBzYW5ndWNoZXJpYZIBFGZhc3RfZm9vZF9yZXN0YXVyYW50mgEkQ2hkRFNVaE5NRzluUzBWSlEwRm5TVVJ0ZUZwbFNUbFJSUkFC4AEA!16s%2Fg%2F11b7rxl0ql?entry=ttu">La Merced 727, Tucumán</a>
+                            <div>
+                                <div class="rating-css d-flex align-items-center">
+                                    <div>
+                                        <h3 class="h3-card">Milanga</h3>
+                                    </div>
+                                    <div class="star-icon">
+                                        <input type="radio" name="ratingq1" id="ratingq1">
+                                        <label for="ratingq1" class="bi bi-star-fill"></label>
+
+                                        <input type="radio" name="ratingq1" id="ratingq2">
+                                        <label for="ratingq2" class="bi bi-star-fill"></label>
+
+                                        <input type="radio" name="ratingq1" id="ratingq3">
+                                        <label for="ratingq3" class="bi bi-star-fill"></label>
+
+                                        <input type="radio" name="ratingq1" id="ratingq4">
+                                        <label for="ratingq4" class="bi bi-star-fill"></label>
+
+                                        <input type="radio" name="ratingq1" id="ratingq5">
+                                        <label for="ratingq5" class="bi bi-star-fill"></label>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="rating-css d-flex align-items-center">
+                                <div>
+                                    <h3 class="h3-card">pan</h3>
+                                </div>
+                                <div class="star-icon">
+                                    <input type="radio" name="ratingw6" id="ratingw6">
+                                    <label for="ratingw6" class="bi bi-star-fill"></label>
+
+                                    <input type="radio" name="ratingw6" id="ratingw7">
+                                    <label for="ratingw7" class="bi bi-star-fill"></label>
+
+                                    <input type="radio" name="ratingw6" id="ratingw8">
+                                    <label for="ratingw8" class="bi bi-star-fill"></label>
+
+                                    <input type="radio" name="ratingw6" id="ratingw9">
+                                    <label for="ratingw9" class="bi bi-star-fill"></label>
+
+                                    <input type="radio" name="ratingw6" id="ratingw10">
+                                    <label for="ratingw10" class="bi bi-star-fill"></label>
+
+                                </div>
+                            </div>
+
+                            <div class="rating-css d-flex align-items-center">
+                                <div>
+                                    <h3 class="h3-card">Picante</h3>
+                                </div>
+                                <div class="star-icon">
+                                    <input type="radio" name="ratinge11" id="ratinge11">
+                                    <label for="ratinge11" class="bi bi-star-fill"></label>
+
+                                    <input type="radio" name="ratinge11" id="ratinge12">
+                                    <label for="ratinge12" class="bi bi-star-fill"></label>
+
+                                    <input type="radio" name="ratinge11" id="ratinge13">
+                                    <label for="ratinge13" class="bi bi-star-fill"></label>
+
+                                    <input type="radio" name="ratinge11" id="ratinge14">
+                                    <label for="ratinge14" class="bi bi-star-fill"></label>
+
+                                    <input type="radio" name="ratinge11" id="ratinge15">
+                                    <label for="ratinge15" class="bi bi-star-fill"></label>
+
+                                </div>
+                            </div>
+
+                            <div class="rating-css d-flex align-items-center">
+                                <div>
+                                    <h3 class="h3-card">Servicio</h3>
+                                </div>
+                                <div class="star-icon">
+                                    <input type="radio" name="ratingr16" id="ratingr16">
+                                    <label for="ratingr16" class="bi bi-star-fill"></label>
+
+                                    <input type="radio" name="ratingr16" id="ratingr17">
+                                    <label for="ratingr17" class="bi bi-star-fill"></label>
+
+                                    <input type="radio" name="ratingr16" id="ratingr18">
+                                    <label for="ratingr18" class="bi bi-star-fill"></label>
+
+                                    <input type="radio" name="ratingr16" id="ratingr19">
+                                    <label for="ratingr19" class="bi bi-star-fill"></label>
+
+                                    <input type="radio" name="ratingr16" id="rating20">
+                                    <label for="ratingr20" class="bi bi-star-fill"></label>
+
+                                </div>
+                            </div>
+                    </div>
+                    <button type="button" class="btn btn-primary btn-card"
+                        style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">
+                        Votar
+                    </button>
+
+
+                </div>
+
+
+                <!-- tarjeta  -->
+                <div class="card" style="width: 18rem;">
+                    <img src="../imagenes/logos-sangucherias/El-10-1-400x300.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h2 class="card-title">El 10</h5>
+                            <a href="https://www.google.com/maps/place/El+10+Gran+Sandwicheria/@-26.8177929,-65.2713508,17z/data=!3m1!4b1!4m6!3m5!1s0x94225cdc148e3a0f:0xfc83a03b25e18fd!8m2!3d-26.8177978!4d-65.2667374!16s%2Fg%2F11byl1_9jm?entry=ttu">Av Aconquija 153, Tucumán</a>
+                            <div>
+                                <div class="rating-css d-flex align-items-center">
+                                    <div>
+                                        <h3 class="h3-card">Milanga</h3>
+                                    </div>
+                                    <div class="star-icon">
+                                        <input type="radio" name="ratingt1" id="ratingt1">
+                                        <label for="ratingt1" class="bi bi-star-fill"></label>
+
+                                        <input type="radio" name="ratingt1" id="ratingt2">
+                                        <label for="ratingt2" class="bi bi-star-fill"></label>
+
+                                        <input type="radio" name="ratingt1" id="ratingt3">
+                                        <label for="ratingt3" class="bi bi-star-fill"></label>
+
+                                        <input type="radio" name="ratingt1" id="ratingt4">
+                                        <label for="ratingt4" class="bi bi-star-fill"></label>
+
+                                        <input type="radio" name="ratingt1" id="ratingt5">
+                                        <label for="ratingt5" class="bi bi-star-fill"></label>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="rating-css d-flex align-items-center">
+                                <div>
+                                    <h3 class="h3-card">Pan</h3>
+                                </div>
+                                <div class="star-icon">
+                                    <input type="radio" name="ratingy6" id="ratingy6">
+                                    <label for="ratingy6" class="bi bi-star-fill"></label>
+
+                                    <input type="radio" name="ratingy6" id="ratingy7">
+                                    <label for="ratingy7" class="bi bi-star-fill"></label>
+
+                                    <input type="radio" name="ratingy6" id="ratingy8">
+                                    <label for="ratingy8" class="bi bi-star-fill"></label>
+
+                                    <input type="radio" name="ratingy6" id="ratingy9">
+                                    <label for="ratingy9" class="bi bi-star-fill"></label>
+
+                                    <input type="radio" name="ratingy6" id="ratingy10">
+                                    <label for="ratingy10" class="bi bi-star-fill"></label>
+
+                                </div>
+                            </div>
+
+                            <div class="rating-css d-flex align-items-center">
+                                <div>
+                                    <h3 class="h3-card">Picante</h3>
+                                </div>
+                                <div class="star-icon">
+                                    <input type="radio" name="ratingu11" id="ratingu11">
+                                    <label for="ratingu11" class="bi bi-star-fill"></label>
+
+                                    <input type="radio" name="ratingu11" id="ratingu12">
+                                    <label for="ratingu12" class="bi bi-star-fill"></label>
+
+                                    <input type="radio" name="ratingu11" id="ratingu13">
+                                    <label for="ratingu13" class="bi bi-star-fill"></label>
+
+                                    <input type="radio" name="ratingu11" id="ratingu14">
+                                    <label for="ratingu14" class="bi bi-star-fill"></label>
+
+                                    <input type="radio" name="ratingu11" id="ratingu15">
+                                    <label for="ratingu15" class="bi bi-star-fill"></label>
+
+                                </div>
+                            </div>
+
+                            <div class="rating-css d-flex align-items-center">
+                                <div>
+                                    <h3 class="h3-card">Servicio</h3>
+                                </div>
+                                <div class="star-icon">
+                                    <input type="radio" name="ratingi16" id="ratingi16">
+                                    <label for="ratingi16" class="bi bi-star-fill"></label>
+
+                                    <input type="radio" name="ratingi16" id="ratingi17">
+                                    <label for="ratingi17" class="bi bi-star-fill"></label>
+
+                                    <input type="radio" name="ratingi16" id="ratingi18">
+                                    <label for="ratingi18" class="bi bi-star-fill"></label>
+
+                                    <input type="radio" name="ratingi16" id="ratingi19">
+                                    <label for="ratingi19" class="bi bi-star-fill"></label>
+
+                                    <input type="radio" name="ratingi16" id="ratingi20">
+                                    <label for="ratingi20" class="bi bi-star-fill"></label>
+
+                                </div>
+                            </div>
+                    </div>
+                    <button type="button" class="btn btn-primary btn-card"
+                        style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">
+                        Votar
+                    </button>
+
+
+                </div>
+
+
+                <!-- tarjeta  -->
+                <div class="card" style="width: 18rem;">
+                    <img src="../imagenes/logos-sangucherias/PEPE-400x300.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h2 class="card-title">Pepe</h5>
+                            <a href="https://www.google.com/maps/place/Pepe+Sanwicheria/@-26.8061208,-65.2675894,17z/data=!3m1!4b1!4m6!3m5!1s0x94225d86ab405b1d:0x451fd33c4200cd1d!8m2!3d-26.8061256!4d-65.2650145!16s%2Fg%2F11sr735gsq?entry=ttu">Av. Perón 160, Tucumán</a>
+                            <div>
+                                <div class="rating-css d-flex align-items-center">
+                                    <div>
+                                        <h3 class="h3-card">Milanga</h3>
+                                    </div>
+                                    <div class="star-icon">
+                                        <input type="radio" name="ratingo1" id="ratingo1">
+                                        <label for="ratingo1" class="bi bi-star-fill"></label>
+
+                                        <input type="radio" name="ratingo1" id="ratingo2">
+                                        <label for="ratingo2" class="bi bi-star-fill"></label>
+
+                                        <input type="radio" name="ratingo1" id="ratingo3">
+                                        <label for="ratingo3" class="bi bi-star-fill"></label>
+
+                                        <input type="radio" name="ratingo1" id="ratingo4">
+                                        <label for="ratingo4" class="bi bi-star-fill"></label>
+
+                                        <input type="radio" name="ratingo1" id="ratingo5">
+                                        <label for="ratingo5" class="bi bi-star-fill"></label>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="rating-css d-flex align-items-center">
+                                <div>
+                                    <h3 class="h3-card">Pan</h3>
+                                </div>
+                                <div class="star-icon">
+                                    <input type="radio" name="ratingp6" id="ratingp6">
+                                    <label for="ratingp6" class="bi bi-star-fill"></label>
+
+                                    <input type="radio" name="ratingp6" id="ratingp7">
+                                    <label for="ratingp7" class="bi bi-star-fill"></label>
+
+                                    <input type="radio" name="ratingp6" id="ratingp8">
+                                    <label for="ratingp8" class="bi bi-star-fill"></label>
+
+                                    <input type="radio" name="ratingp6" id="ratingp9">
+                                    <label for="ratingp9" class="bi bi-star-fill"></label>
+
+                                    <input type="radio" name="ratingp6" id="ratingp10">
+                                    <label for="ratingp10" class="bi bi-star-fill"></label>
+
+                                </div>
+                            </div>
+
+                            <div class="rating-css d-flex align-items-center">
+                                <div>
+                                    <h3 class="h3-card">Picante</h3>
+                                </div>
+                                <div class="star-icon">
+                                    <input type="radio" name="ratinga11" id="ratinga11">
+                                    <label for="ratinga11" class="bi bi-star-fill"></label>
+
+                                    <input type="radio" name="ratinga11" id="ratinga12">
+                                    <label for="ratinga12" class="bi bi-star-fill"></label>
+
+                                    <input type="radio" name="ratinga11" id="ratinga13">
+                                    <label for="ratinga13" class="bi bi-star-fill"></label>
+
+                                    <input type="radio" name="ratinga11" id="ratinga14">
+                                    <label for="ratinga14" class="bi bi-star-fill"></label>
+
+                                    <input type="radio" name="ratinga11" id="ratinga15">
+                                    <label for="ratinga15" class="bi bi-star-fill"></label>
+
+                                </div>
+                            </div>
+
+                            <div class="rating-css d-flex align-items-center">
+                                <div>
+                                    <h3 class="h3-card">Servicio</h3>
+                                </div>
+                                <div class="star-icon">
+                                    <input type="radio" name="ratings16" id="ratings16">
+                                    <label for="ratings16" class="bi bi-star-fill"></label>
+
+                                    <input type="radio" name="ratings16" id="ratings17">
+                                    <label for="ratings17" class="bi bi-star-fill"></label>
+
+                                    <input type="radio" name="ratings16" id="ratinsg18">
+                                    <label for="ratinsg18" class="bi bi-star-fill"></label>
+
+                                    <input type="radio" name="ratings16" id="ratings19">
+                                    <label for="ratings19" class="bi bi-star-fill"></label>
+
+                                    <input type="radio" name="ratings16" id="ratings20">
+                                    <label for="ratings20" class="bi bi-star-fill"></label>
+
+                                </div>
+                            </div>
+                    </div>
+                    <button type="button" class="btn btn-primary btn-card"
+                        style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">
+                        Votar
+                    </button>
+
+
+                </div>
+
+
+                <!-- tarjeta  -->
+                <div class="card" style="width: 18rem;">
+                    <img src="../imagenes/logos-sangucherias/don-pepe-el-original-1-400x300.jpg" class="card-img-top"
+                        alt="...">
+                    <div class="card-body">
+                        <h2 class="card-title">Don Pepe</h5>
+                            <a href="https://www.google.com/maps/place/Don+Pepe/@-26.836392,-65.2080288,17z/data=!3m1!4b1!4m6!3m5!1s0x94225c0f1dc97841:0x7b59aa4e7ec7792a!8m2!3d-26.8363968!4d-65.2054539!16s%2Fg%2F11bymy8g8x?entry=ttu">Gral. Paz 463, Tucumán</a>
+                            <div>
+                                <div class="rating-css d-flex align-items-center">
+                                    <div>
+                                        <h3 class="h3-card">Milanga</h3>
+                                    </div>
+                                    <div class="star-icon">
+                                        <input type="radio" name="ratings1" id="ratings1">
+                                        <label for="ratings1" class="bi bi-star-fill"></label>
+
+                                        <input type="radio" name="ratings1" id="ratings2">
+                                        <label for="ratings2" class="bi bi-star-fill"></label>
+
+                                        <input type="radio" name="ratings1" id="ratings3">
+                                        <label for="ratings3" class="bi bi-star-fill"></label>
+
+                                        <input type="radio" name="ratings1" id="ratings4">
+                                        <label for="ratings4" class="bi bi-star-fill"></label>
+
+                                        <input type="radio" name="ratings1" id="ratings5">
+                                        <label for="ratings5" class="bi bi-star-fill"></label>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="rating-css d-flex align-items-center">
+                                <div>
+                                    <h3 class="h3-card">Pan</h3>
+                                </div>
+                                <div class="star-icon">
+                                    <input type="radio" name="ratingd6" id="ratingd6">
+                                    <label for="ratingd6" class="bi bi-star-fill"></label>
+
+                                    <input type="radio" name="ratingd6" id="ratingd7">
+                                    <label for="ratingd7" class="bi bi-star-fill"></label>
+
+                                    <input type="radio" name="ratingd6" id="ratingd8">
+                                    <label for="ratingd8" class="bi bi-star-fill"></label>
+
+                                    <input type="radio" name="ratingd6" id="ratingd9">
+                                    <label for="ratingd9" class="bi bi-star-fill"></label>
+
+                                    <input type="radio" name="ratingd6" id="ratingd10">
+                                    <label for="ratingd10" class="bi bi-star-fill"></label>
+
+                                </div>
+                            </div>
+
+                            <div class="rating-css d-flex align-items-center">
+                                <div>
+                                    <h3 class="h3-card">Picante</h3>
+                                </div>
+                                <div class="star-icon">
+                                    <input type="radio" name="ratingf11" id="ratingf11">
+                                    <label for="ratingf11" class="bi bi-star-fill"></label>
+
+                                    <input type="radio" name="ratingf11" id="ratingf12">
+                                    <label for="ratingf12" class="bi bi-star-fill"></label>
+
+                                    <input type="radio" name="ratingf11" id="ratingf13">
+                                    <label for="ratingf13" class="bi bi-star-fill"></label>
+
+                                    <input type="radio" name="ratingf11" id="ratingf14">
+                                    <label for="ratingf14" class="bi bi-star-fill"></label>
+
+                                    <input type="radio" name="ratingf11" id="ratingf15">
+                                    <label for="ratingf15" class="bi bi-star-fill"></label>
+
+                                </div>
+                            </div>
+
+                            <div class="rating-css d-flex align-items-center">
+                                <div>
+                                    <h3 class="h3-card">Servicio</h3>
+                                </div>
+                                <div class="star-icon">
+                                    <input type="radio" name="ratingg16" id="ratingg16">
+                                    <label for="ratingg16" class="bi bi-star-fill"></label>
+
+                                    <input type="radio" name="ratingg16" id="ratingg17">
+                                    <label for="ratingg17" class="bi bi-star-fill"></label>
+
+                                    <input type="radio" name="ratingg16" id="ratingg18">
+                                    <label for="ratingg18" class="bi bi-star-fill"></label>
+
+                                    <input type="radio" name="ratingg16" id="ratingg19">
+                                    <label for="ratingg19" class="bi bi-star-fill"></label>
+
+                                    <input type="radio" name="ratingg16" id="ratingg20">
+                                    <label for="ratingg20" class="bi bi-star-fill"></label>
+
+                                </div>
+                            </div>
+                    </div>
+                    <button type="button" class="btn btn-primary btn-card"
+                        style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">
+                        Votar
+                    </button>
+
+
+                </div>
+
+
+                <!-- tarjeta  -->
+                <div class="card" style="width: 18rem;">
+                    <img src="../imagenes/logos-sangucherias/aurora.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h2 class="card-title">Aurora</h5>
+                            <a href="https://www.google.com/maps/place/La+Aurora+Sangucher%C3%ADa/@-26.8267718,-65.228236,17z/data=!3m1!4b1!4m6!3m5!1s0x94225c68126bd095:0xc7f83d3964ac845a!8m2!3d-26.8267766!4d-65.2256611!16s%2Fg%2F11bzrdv04l?entry=ttu">Av. Mate de Luna 1856, Tuc.</a>
+                            <div>
+                                <div class="rating-css d-flex align-items-center">
+                                    <div>
+                                        <h3 class="h3-card">Milanga</h3>
+                                    </div>
+                                    <div class="star-icon">
+                                        <input type="radio" name="ratingh1" id="ratingh1">
+                                        <label for="ratingh1" class="bi bi-star-fill"></label>
+
+                                        <input type="radio" name="ratingh1" id="ratingh2">
+                                        <label for="ratingh2" class="bi bi-star-fill"></label>
+
+                                        <input type="radio" name="ratingh1" id="ratingh3">
+                                        <label for="ratingh3" class="bi bi-star-fill"></label>
+
+                                        <input type="radio" name="ratingh1" id="ratingh4">
+                                        <label for="ratingh4" class="bi bi-star-fill"></label>
+
+                                        <input type="radio" name="ratingh1" id="ratingh5">
+                                        <label for="ratingh5" class="bi bi-star-fill"></label>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="rating-css d-flex align-items-center">
+                                <div>
+                                    <h3 class="h3-card">Pan</h3>
+                                </div>
+                                <div class="star-icon">
+                                    <input type="radio" name="ratingj6" id="ratingj6">
+                                    <label for="ratingj6" class="bi bi-star-fill"></label>
+
+                                    <input type="radio" name="ratingj6" id="ratingj7">
+                                    <label for="ratingj7" class="bi bi-star-fill"></label>
+
+                                    <input type="radio" name="ratingj6" id="ratingj8">
+                                    <label for="ratingj8" class="bi bi-star-fill"></label>
+
+                                    <input type="radio" name="ratingj6" id="ratingj9">
+                                    <label for="ratingj9" class="bi bi-star-fill"></label>
+
+                                    <input type="radio" name="ratingj6" id="ratingj10">
+                                    <label for="ratingj10" class="bi bi-star-fill"></label>
+
+                                </div>
+                            </div>
+
+                            <div class="rating-css d-flex align-items-center">
+                                <div>
+                                    <h3 class="h3-card">Picante</h3>
+                                </div>
+                                <div class="star-icon">
+                                    <input type="radio" name="ratingk11" id="ratingk11">
+                                    <label for="ratingk11" class="bi bi-star-fill"></label>
+
+                                    <input type="radio" name="ratingk11" id="ratingk12">
+                                    <label for="ratingk12" class="bi bi-star-fill"></label>
+
+                                    <input type="radio" name="ratingk11" id="ratingk13">
+                                    <label for="ratingk13" class="bi bi-star-fill"></label>
+
+                                    <input type="radio" name="ratingk11" id="ratingk14">
+                                    <label for="ratingk14" class="bi bi-star-fill"></label>
+
+                                    <input type="radio" name="ratingk11" id="ratingk15">
+                                    <label for="ratingk15" class="bi bi-star-fill"></label>
+
+                                </div>
+                            </div>
+
+                            <div class="rating-css d-flex align-items-center">
+                                <div>
+                                    <h3 class="h3-card">Servicio</h3>
+                                </div>
+                                <div class="star-icon">
+                                    <input type="radio" name="ratingl16" id="ratingl16">
+                                    <label for="ratingl16" class="bi bi-star-fill"></label>
+
+                                    <input type="radio" name="ratingl16" id="ratingl17">
+                                    <label for="ratingl17" class="bi bi-star-fill"></label>
+
+                                    <input type="radio" name="ratingl16" id="ratingl18">
+                                    <label for="ratingl18" class="bi bi-star-fill"></label>
+
+                                    <input type="radio" name="ratingl16" id="ratingl19">
+                                    <label for="ratingl19" class="bi bi-star-fill"></label>
+
+                                    <input type="radio" name="ratingl16" id="ratingl20">
+                                    <label for="ratingl20" class="bi bi-star-fill"></label>
+
+                                </div>
+                            </div>
+                    </div>
+                    <button type="button" class="btn btn-primary btn-card"
+                        style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">
+                        Votar
+                    </button>
+
+
+                </div>
+
+
+                <!-- tarjeta  -->
+                <div class="card" style="width: 18rem;">
+                    <img src="../imagenes/logos-sangucherias/bar-quino-400x300.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h2 class="card-title">Bar Quino</h5>
+                            <a href="https://www.google.com/maps/place/Quino+Bar/@-26.8339164,-65.2198741,17z/data=!3m1!4b1!4m6!3m5!1s0x94225d36021b5af3:0xeb9795759654718d!8m2!3d-26.8339212!4d-65.2172992!16s%2Fg%2F11v1b3qlw3?entry=ttu">Gral. Paz 1207, Tucumán</a>
+                            <div>
+                                <div class="rating-css d-flex align-items-center">
+                                    <div>
+                                        <h3 class="h3-card">Milanga</h3>
+                                    </div>
+                                    <div class="star-icon">
+                                        <input type="radio" name="ratingz1" id="ratingz1">
+                                        <label for="ratingz1" class="bi bi-star-fill"></label>
+
+                                        <input type="radio" name="ratingz1" id="ratingz2">
+                                        <label for="ratingz2" class="bi bi-star-fill"></label>
+
+                                        <input type="radio" name="ratingz1" id="ratingz3">
+                                        <label for="ratingz3" class="bi bi-star-fill"></label>
+
+                                        <input type="radio" name="ratingz1" id="ratingz4">
+                                        <label for="ratingz4" class="bi bi-star-fill"></label>
+
+                                        <input type="radio" name="ratingz1" id="ratingz5">
+                                        <label for="ratingz5" class="bi bi-star-fill"></label>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="rating-css d-flex align-items-center">
+                                <div>
+                                    <h3 class="h3-card">Pan</h3>
+                                </div>
+                                <div class="star-icon">
+                                    <input type="radio" name="ratingx6" id="ratingx6">
+                                    <label for="ratingx6" class="bi bi-star-fill"></label>
+
+                                    <input type="radio" name="ratingx6" id="ratingx7">
+                                    <label for="ratingx7" class="bi bi-star-fill"></label>
+
+                                    <input type="radio" name="ratingx6" id="ratingx8">
+                                    <label for="ratingx8" class="bi bi-star-fill"></label>
+
+                                    <input type="radio" name="ratingx6" id="ratingx9">
+                                    <label for="ratingx9" class="bi bi-star-fill"></label>
+
+                                    <input type="radio" name="ratingx6" id="ratingx10">
+                                    <label for="ratingx10" class="bi bi-star-fill"></label>
+
+                                </div>
+                            </div>
+
+                            <div class="rating-css d-flex align-items-center">
+                                <div>
+                                    <h3 class="h3-card">Picante</h3>
+                                </div>
+                                <div class="star-icon">
+                                    <input type="radio" name="ratingc11" id="ratingc11">
+                                    <label for="ratingc11" class="bi bi-star-fill"></label>
+
+                                    <input type="radio" name="ratingc11" id="ratingc12">
+                                    <label for="ratingc12" class="bi bi-star-fill"></label>
+
+                                    <input type="radio" name="ratingc11" id="ratingc13">
+                                    <label for="ratingc13" class="bi bi-star-fill"></label>
+
+                                    <input type="radio" name="ratingc11" id="ratingc14">
+                                    <label for="ratingc14" class="bi bi-star-fill"></label>
+
+                                    <input type="radio" name="ratingc11" id="ratingc15">
+                                    <label for="ratingc15" class="bi bi-star-fill"></label>
+
+                                </div>
+                            </div>
+
+                            <div class="rating-css d-flex align-items-center">
+                                <div>
+                                    <h3 class="h3-card">Servicio</h3>
+                                </div>
+                                <div class="star-icon">
+                                    <input type="radio" name="ratingv16" id="ratingv16">
+                                    <label for="ratingv16" class="bi bi-star-fill"></label>
+
+                                    <input type="radio" name="ratingv16" id="ratingv17">
+                                    <label for="ratingv17" class="bi bi-star-fill"></label>
+
+                                    <input type="radio" name="ratingv16" id="ratingv18">
+                                    <label for="ratingv18" class="bi bi-star-fill"></label>
+
+                                    <input type="radio" name="ratingv16" id="ratingv19">
+                                    <label for="ratingv19" class="bi bi-star-fill"></label>
+
+                                    <input type="radio" name="ratingv16" id="ratingv20">
+                                    <label for="ratingv20" class="bi bi-star-fill"></label>
+
+                                </div>
+                            </div>
+                    </div>
+                    <button type="button" class="btn btn-primary btn-card"
+                        style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">
+                        Votar
+                    </button>
+
+
+                </div>
+
+
+                <!-- tarjeta  -->
+                <div class="card" style="width: 18rem;">
+                    <img src="../imagenes/logos-sangucherias/A-mi-noooo-400x300.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h2 class="card-title">A mi Nooo</h5>
+                            <a href="https://www.google.com/maps/place/A+mi+nooo/@-26.8162613,-65.2164771,17z/data=!3m1!4b1!4m6!3m5!1s0x94225d4cace91979:0x6cf5d239874a610a!8m2!3d-26.8162661!4d-65.2139022!16s%2Fg%2F11kc26vb1t?entry=ttu">Av. Sarmiento 1299, Tucumán</a>
+                            <div>
+                                <div class="rating-css d-flex align-items-center">
+                                    <div>
+                                        <h3 class="h3-card">Milanga</h3>
+                                    </div>
+                                    <div class="star-icon">
+                                        <input type="radio" name="ratingb1" id="ratingb1">
+                                        <label for="ratingb1" class="bi bi-star-fill"></label>
+
+                                        <input type="radio" name="ratingb1" id="ratingb2">
+                                        <label for="ratingb2" class="bi bi-star-fill"></label>
+
+                                        <input type="radio" name="ratingb1" id="ratingb3">
+                                        <label for="ratingb3" class="bi bi-star-fill"></label>
+
+                                        <input type="radio" name="ratingb1" id="ratingb4">
+                                        <label for="ratingb4" class="bi bi-star-fill"></label>
+
+                                        <input type="radio" name="ratingb1" id="ratingb5">
+                                        <label for="ratingb5" class="bi bi-star-fill"></label>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="rating-css d-flex align-items-center">
+                                <div>
+                                    <h3 class="h3-card">Pan</h3>
+                                </div>
+                                <div class="star-icon">
+                                    <input type="radio" name="ratingn6" id="ratingn6">
+                                    <label for="ratingn6" class="bi bi-star-fill"></label>
+
+                                    <input type="radio" name="ratingn6" id="ratingn7">
+                                    <label for="ratingn7" class="bi bi-star-fill"></label>
+
+                                    <input type="radio" name="ratingn6" id="ratingn8">
+                                    <label for="ratingn8" class="bi bi-star-fill"></label>
+
+                                    <input type="radio" name="ratingn6" id="ratingn9">
+                                    <label for="ratingn9" class="bi bi-star-fill"></label>
+
+                                    <input type="radio" name="ratingn6" id="ratingn10">
+                                    <label for="ratingn10" class="bi bi-star-fill"></label>
+
+                                </div>
+                            </div>
+
+                            <div class="rating-css d-flex align-items-center">
+                                <div>
+                                    <h3 class="h3-card">Picante</h3>
+                                </div>
+                                <div class="star-icon">
+                                    <input type="radio" name="ratingm11" id="ratingm11">
+                                    <label for="ratingm11" class="bi bi-star-fill"></label>
+
+                                    <input type="radio" name="ratingm11" id="ratingm12">
+                                    <label for="ratingm12" class="bi bi-star-fill"></label>
+
+                                    <input type="radio" name="ratingm11" id="ratingm13">
+                                    <label for="ratingm13" class="bi bi-star-fill"></label>
+
+                                    <input type="radio" name="ratingm11" id="ratingm14">
+                                    <label for="ratingm14" class="bi bi-star-fill"></label>
+
+                                    <input type="radio" name="ratingm11" id="ratingm15">
+                                    <label for="ratingm15" class="bi bi-star-fill"></label>
+
+                                </div>
+                            </div>
+
+                            <div class="rating-css d-flex align-items-center">
+                                <div>
+                                    <h3 class="h3-card">Servicio</h3>
+                                </div>
+                                <div class="star-icon">
+                                    <input type="radio" name="ratinga116" id="ratinga116">
+                                    <label for="ratinga116" class="bi bi-star-fill"></label>
+
+                                    <input type="radio" name="ratinga116" id="ratinga117">
+                                    <label for="ratinga117" class="bi bi-star-fill"></label>
+
+                                    <input type="radio" name="ratinga116" id="ratinga118">
+                                    <label for="ratinga118" class="bi bi-star-fill"></label>
+
+                                    <input type="radio" name="ratinga116" id="ratinga119">
+                                    <label for="ratinga119" class="bi bi-star-fill"></label>
+
+                                    <input type="radio" name="ratinga116" id="ratinga120">
+                                    <label for="ratinga120" class="bi bi-star-fill"></label>
+
+                                </div>
+                            </div>
+                    </div>
+                    <button type="button" class="btn btn-primary btn-card"
+                        style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">
+                        Votar
+                    </button>
+
+
+                </div>
+
+
+                <!-- tarjeta  -->
+                <div class="card" style="width: 18rem;">
+                    <img src="../imagenes/logos-sangucherias/El-turco-400x300.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h2 class="card-title">El Turco</h5>
+                            <a href="https://www.google.com/maps/place/El+Turco+Sandwicheria/@-26.7902266,-65.2232482,17z/data=!3m1!4b1!4m6!3m5!1s0x94225dc83fad9d67:0x14bb82e903b9903f!8m2!3d-26.7902314!4d-65.2206733!16s%2Fg%2F11dxl9t_dr?entry=ttu">Av. de Aguirre 2186</a>
+                            <div>
+                                <div class="rating-css d-flex align-items-center">
+                                    <div>
+                                        <h3 class="h3-card">Milanga</h3>
+                                    </div>
+                                    <div class="star-icon">
+                                        <input type="radio" name="ratinga21" id="ratinga21">
+                                        <label for="ratinga21" class="bi bi-star-fill"></label>
+
+                                        <input type="radio" name="ratinga21" id="ratinga22">
+                                        <label for="ratinga22" class="bi bi-star-fill"></label>
+
+                                        <input type="radio" name="ratinga21" id="ratinga23">
+                                        <label for="ratinga23" class="bi bi-star-fill"></label>
+
+                                        <input type="radio" name="ratinga21" id="ratinga24">
+                                        <label for="ratinga24" class="bi bi-star-fill"></label>
+
+                                        <input type="radio" name="ratinga21" id="ratinga25">
+                                        <label for="ratinga25" class="bi bi-star-fill"></label>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="rating-css d-flex align-items-center">
+                                <div>
+                                    <h3 class="h3-card">Pan</h3>
+                                </div>
+                                <div class="star-icon">
+                                    <input type="radio" name="ratinga36" id="ratinga36">
+                                    <label for="ratinga36" class="bi bi-star-fill"></label>
+
+                                    <input type="radio" name="ratinga36" id="ratinga37">
+                                    <label for="ratinga37" class="bi bi-star-fill"></label>
+
+                                    <input type="radio" name="ratinga36" id="ratinga38">
+                                    <label for="ratinga38" class="bi bi-star-fill"></label>
+
+                                    <input type="radio" name="ratinga36" id="ratinga39">
+                                    <label for="ratinga39" class="bi bi-star-fill"></label>
+
+                                    <input type="radio" name="ratinga36" id="ratinga310">
+                                    <label for="ratinga310" class="bi bi-star-fill"></label>
+
+                                </div>
+                            </div>
+
+                            <div class="rating-css d-flex align-items-center">
+                                <div>
+                                    <h3 class="h3-card">Picante</h3>
+                                </div>
+                                <div class="star-icon">
+                                    <input type="radio" name="ratinga411" id="ratinga411">
+                                    <label for="ratinga411" class="bi bi-star-fill"></label>
+
+                                    <input type="radio" name="ratinga411" id="ratinga412">
+                                    <label for="ratinga412" class="bi bi-star-fill"></label>
+
+                                    <input type="radio" name="ratinga411" id="ratinga413">
+                                    <label for="ratinga413" class="bi bi-star-fill"></label>
+
+                                    <input type="radio" name="ratinga411" id="ratinga414">
+                                    <label for="ratinga414" class="bi bi-star-fill"></label>
+
+                                    <input type="radio" name="ratinga411" id="ratinga415">
+                                    <label for="ratinga415" class="bi bi-star-fill"></label>
+
+                                </div>
+                            </div>
+
+                            <div class="rating-css d-flex align-items-center">
+                                <div>
+                                    <h3 class="h3-card">Servicio</h3>
+                                </div>
+                                <div class="star-icon">
+                                    <input type="radio" name="ratinga4119" id="ratinga4119">
+                                    <label for="ratinga4119" class="bi bi-star-fill"></label>
+
+                                    <input type="radio" name="ratinga4119" id="ratinga4129">
+                                    <label for="ratinga4129" class="bi bi-star-fill"></label>
+
+                                    <input type="radio" name="ratinga4119" id="ratinga4139">
+                                    <label for="ratinga4139" class="bi bi-star-fill"></label>
+
+                                    <input type="radio" name="ratinga4119" id="ratinga4149">
+                                    <label for="ratinga4149" class="bi bi-star-fill"></label>
+
+                                    <input type="radio" name="ratinga4119" id="ratinga4159">
+                                    <label for="ratinga4159" class="bi bi-star-fill"></label>
+
+                                </div>
+                            </div>
+                    </div>
+                    <button type="button" class="btn btn-primary btn-card"
+                        style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">
+                        Votar
+                    </button>
+
+
+                </div>
+
+
+                <!-- tarjeta  -->
+                <div class="card" style="width: 18rem;">
+                    <img src="../imagenes/logos-sangucherias/Fiky-400x300.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h2 class="card-title">Fiky</h5>
+                            <a href="https://www.google.com/maps/place/Fiky+Sangucheria/@-26.7972714,-65.2136739,17z/data=!3m1!4b1!4m6!3m5!1s0x94225dcbb1e3c1e7:0x76b0b0657751c1f2!8m2!3d-26.7972762!4d-65.211099!16s%2Fg%2F11g9gzjqcz?entry=ttu">Av del Líbano 2320, Tucumán</a>
+                            <div>
+                                <div class="rating-css d-flex align-items-center">
+                                    <div>
+                                        <h3 class="h3-card">Milanga</h3>
+                                    </div>
+                                    <div class="star-icon">
+                                        <input type="radio" name="ratinga61" id="ratinga61">
+                                        <label for="ratinga61" class="bi bi-star-fill"></label>
+
+                                        <input type="radio" name="ratinga61" id="ratinga62">
+                                        <label for="ratinga62" class="bi bi-star-fill"></label>
+
+                                        <input type="radio" name="ratinga61" id="ratinga63">
+                                        <label for="ratinga63" class="bi bi-star-fill"></label>
+
+                                        <input type="radio" name="ratinga61" id="ratinga64">
+                                        <label for="ratinga64" class="bi bi-star-fill"></label>
+
+                                        <input type="radio" name="ratinga61" id="ratinga65">
+                                        <label for="ratinga65" class="bi bi-star-fill"></label>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="rating-css d-flex align-items-center">
+                                <div>
+                                    <h3 class="h3-card">Pan</h3>
+                                </div>
+                                <div class="star-icon">
+                                    <input type="radio" name="ratinga66" id="ratinga66">
+                                    <label for="ratinga66" class="bi bi-star-fill"></label>
+
+                                    <input type="radio" name="ratinga66" id="ratinga67">
+                                    <label for="ratinga67" class="bi bi-star-fill"></label>
+
+                                    <input type="radio" name="ratinga66" id="ratinga68">
+                                    <label for="ratinga68" class="bi bi-star-fill"></label>
+
+                                    <input type="radio" name="ratinga66" id="ratinga69">
+                                    <label for="ratinga69" class="bi bi-star-fill"></label>
+
+                                    <input type="radio" name="ratinga66" id="ratinga610">
+                                    <label for="ratinga610" class="bi bi-star-fill"></label>
+
+                                </div>
+                            </div>
+
+                            <div class="rating-css d-flex align-items-center">
+                                <div>
+                                    <h3 class="h3-card">Picante</h3>
+                                </div>
+                                <div class="star-icon">
+                                    <input type="radio" name="ratinga711" id="ratinga711">
+                                    <label for="ratinga711" class="bi bi-star-fill"></label>
+
+                                    <input type="radio" name="ratinga711" id="ratinga712">
+                                    <label for="ratinga712" class="bi bi-star-fill"></label>
+
+                                    <input type="radio" name="ratinga711" id="ratinga713">
+                                    <label for="ratinga713" class="bi bi-star-fill"></label>
+
+                                    <input type="radio" name="ratinga711" id="ratinga714">
+                                    <label for="ratinga714" class="bi bi-star-fill"></label>
+
+                                    <input type="radio" name="ratinga711" id="ratinga715">
+                                    <label for="ratinga715" class="bi bi-star-fill"></label>
+
+                                </div>
+                            </div>
+
+                            <div class="rating-css d-flex align-items-center">
+                                <div>
+                                    <h3 class="h3-card">Servicio</h3>
+                                </div>
+                                <div class="star-icon">
+                                    <input type="radio" name="ratinga816" id="ratinga816">
+                                    <label for="ratinga816" class="bi bi-star-fill"></label>
+
+                                    <input type="radio" name="ratinga816" id="ratinga817">
+                                    <label for="ratinga817" class="bi bi-star-fill"></label>
+
+                                    <input type="radio" name="ratinga816" id="ratinga818">
+                                    <label for="ratinga818" class="bi bi-star-fill"></label>
+
+                                    <input type="radio" name="ratinga816" id="ratinga819">
+                                    <label for="ratinga819" class="bi bi-star-fill"></label>
+
+                                    <input type="radio" name="ratinga816" id="ratinga820">
+                                    <label for="ratinga820" class="bi bi-star-fill"></label>
+
+                                </div>
+                            </div>
+                    </div>
+                    <button type="button" class="btn btn-primary btn-card"
+                        style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">
+                        Votar
+                    </button>
+
+
+                </div>
+
+
+
+
+
+
+
+
+
+
     </main>
+    <!-- footer -->
+    <footer>
+        <div class="logo">
+            <img src="../imagenes/logo-chiquito.png" alt="Logo de CHEGUSAN">
+            <p class="chegu-word">Chegusan</p>
+        </div>
+        <div class="redes-sociales">
+            <a href="https://www.instagram.com/tu_usuario_instagram" target="_blank"><i
+                    class="fa-brands fa-instagram"></i></a>
+            <a href="https://www.facebook.com/tu_usuario_facebook" target="_blank"><i><i
+                        class="fa-brands fa-facebook"></i></i></a>
+            <a href="https://twitter.com/tu_usuario_twitter" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+        </div>
+        <div class="info">
+            <p>&copy; 2024 <span class="chegu-word">Chegusan</span> | Todos los derechos reservados</p>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
 
 </body>
 

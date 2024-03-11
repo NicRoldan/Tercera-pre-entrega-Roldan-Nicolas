@@ -1,0 +1,129 @@
+h2 {
+  margin: 0;
+  color: #000000;
+  font-family: "Roboto", sans-serif;
+}
+
+h3 {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+a {
+  color: #007bff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #0056b3;
+}
+
+/* Estilos para las secciones */
+section {
+  margin-bottom: 30px;
+  overflow: hidden;
+}
+section .art-group {
+  background-color: rgba(255, 255, 255, 0.2549019608);
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  padding: 20px;
+}
+section .art-group .div-parrafo {
+  text-align: justify;
+}
+section .art-group .div-parrafo h2 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  margin: 0;
+  color: #333;
+  font-family: "Roboto", sans-serif;
+}
+section .art-group .div-parrafo p {
+  margin: 0;
+  color: #000000;
+  line-height: 1.6;
+  font-family: "Lato", sans-serif;
+}
+section .art-group img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+section .art-group div {
+  margin-left: 0;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1199px) {
+  .secciones-index {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  .secciones-index .art-group {
+    background-color: rgba(255, 255, 255, 0.2549019608);
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    padding: 20px;
+    max-width: 70%;
+  }
+  .secciones-index .art-group div .descripcion {
+    font-size: 1rem;
+  }
+  .secciones-index .art-group div .titulos-main {
+    font-size: 1.5em;
+    margin-top: 0;
+  }
+  .secciones-index .art-group img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 20px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .secciones-index {
+    margin: 20px;
+    height: auto;
+    border-radius: 25px 25px;
+  }
+  .secciones-index .articulo1 .div-parrafo {
+    text-align: end;
+  }
+  .secciones-index .articulo3 .div-parrafo {
+    text-align: end;
+  }
+  .secciones-index .articulo1 img,
+  .secciones-index .articulo3 img {
+    order: 1;
+    padding-left: 2rem;
+  }
+  .art-group {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .art-group img {
+    width: 100%;
+    display: block;
+    max-height: 300px;
+    padding: 1rem;
+    border-radius: 40px;
+  }
+  .art-group .div-parrafo {
+    max-width: 45%;
+  }
+  .art-group .div-parrafo .titulos-main {
+    font-size: 24px;
+    color: #333;
+  }
+}

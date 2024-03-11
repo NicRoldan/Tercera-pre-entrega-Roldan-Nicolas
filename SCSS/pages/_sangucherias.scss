@@ -1,0 +1,70 @@
+.titulo-sangucherias {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.8rem;
+    text-align: center;
+    font-weight: 900;
+}
+
+.card {
+    margin: 2rem;
+    background-color: #ffffff88;
+    border-radius: 25px;
+
+    img {
+        padding: 1.5rem;
+    }
+
+    div {
+        p {
+            color: black;
+        }
+    }
+}
+
+
+
+
+/* atributos estrellas de tarjetas */
+
+.rating-css {
+    display: none;    
+    .star-icon {
+    color: #f7a800;
+    font-size: 1.3rem;
+    text-align: center;
+    align-items: center;
+    text-transform: uppercase;
+    padding-bottom: 1rem;
+    padding-left: 10px;
+    input {
+        display: none;
+        }
+    
+    }
+}
+
+
+
+.rating-css input+label {
+    text-shadow: 1px 1px 0 #000000;
+    cursor: pointer;
+}
+
+.rating-css input:checked+label~label {
+    color: #838383;
+}
+
+.rating-css label:active {
+    transform: scale(0.8);
+    transition: 0.3s ease;
+}
+
+/* botones de tarjetas */
+
+.btn-card {
+    background-color: #06623B;
+
+    margin-bottom: 0.5rem;
+    font-size: 1.5rem;
+}
+
