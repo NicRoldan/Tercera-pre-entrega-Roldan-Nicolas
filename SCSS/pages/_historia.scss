@@ -4,8 +4,7 @@
     margin: 0 auto;
     padding: 10px;
     h2 {
-        font-size: 24px;
-        margin-bottom: 10px;
+        @include titulos-h2
         }
         p {
             margin-bottom: 20px;

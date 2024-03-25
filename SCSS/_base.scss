@@ -15,6 +15,19 @@ $cheguword: 'Montserrat Alternates', sans-serif;
 $titulos: 'Roboto', sans-serif;
 $parrafos: 'Lato', sans-serif;
 
+
+
+// mixinns//
+@mixin titulos-h2 {
+    margin: 0;
+    color: #000000;
+    font-family: $titulos;
+    font-size: 1.8;
+    font-weight: 900;
+}
+
+
+
 * {
     margin: 0;
     padding: 0;
@@ -36,21 +49,14 @@ body {
 }
 
 h2 {
-    margin: 0;
-    color: #000000;
-    font-family: $titulos;
-    font-size: 1.8;
-    font-weight: 900;
+    @include titulos-h2()
 }
 
 p {
     font-family: $parrafos;
 }
 
-.btn:hover {
-    background-color: chartreuse;
-    color: #000000;
-}
+
 
 
 
@@ -67,3 +73,4 @@ a {
 a:hover {
     color: #0056b3;
 }
+

@@ -34,11 +34,6 @@ p {
   font-family: "Lato", sans-serif;
 }
 
-.btn:hover {
-  background-color: chartreuse;
-  color: #000000;
-}
-
 a {
   color: #007bff;
   text-decoration: none;
@@ -168,8 +163,11 @@ nav .logo-container .logo-txt {
   padding: 10px;
 }
 .section-historia article h2 {
-  font-size: 24px;
-  margin-bottom: 10px;
+  margin: 0;
+  color: #000000;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.8;
+  font-weight: 900;
 }
 .section-historia article p {
   margin-bottom: 20px;
@@ -544,10 +542,13 @@ footer .logo img {
 footer .logo p {
   color: #fff;
   margin-left: 10px;
+  margin-top: 14px;
+  font-size: 2rem;
 }
 footer .redes-sociales a {
   display: inline-block;
   margin: 0 10px;
+  font-size: 2rem;
 }
 footer .redes-sociales a img {
   width: 40px;
